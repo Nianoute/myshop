@@ -4,6 +4,7 @@
   position: fixed;
   display: flex;
   width: 100vw;
+  z-index: 999;
 
   .classic {
     position: relative;
@@ -44,11 +45,6 @@
           color: black;
           width: 2.4rem;
           height: 0.35rem;
-          -webkit-transition: 0.2s ease;
-          transition: 0.2s ease;
-          -webkit-transform: rotate(0deg);
-          -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
           background-color: currentColor;
           border-radius: 0.3rem;
         }
@@ -57,11 +53,6 @@
           content: "";
           width: 1.8rem;
           height: 0.35rem;
-          -webkit-transition: 0.2s ease;
-          transition: 0.2s ease;
-          -webkit-transform: rotate(0deg);
-          -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
           background-color: currentColor;
           border-radius: 0.3rem;
         }

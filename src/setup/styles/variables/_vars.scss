@@ -32,3 +32,21 @@ $desktop: 1440px;
 $tablette: 1024px;
 $mobile: 768px;
 $maxWidth: 1200px;
+
+.primary_button {
+  width: 11rem;
+  height: 3.8rem;
+  background: #ed5466;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.8rem;
+  border-radius: 0.8rem;
+  color: #fff;
+
+  &:hover {
+    background: #f26777;
+    cursor: pointer;
+  }
+}
