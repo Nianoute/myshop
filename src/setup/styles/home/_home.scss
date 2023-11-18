@@ -1,10 +1,85 @@
 .home {
-  background-color: $primary;
   color: white;
+  align-items: center;
+
+  .space {
+    height: 8.2rem;
+  }
+
+  .head {
+    width: 100%;
+    height: 52rem;
+    background: url(../../../../public/home/head.jpg),
+      lightgray -268.603px -349.314px / 171.627% 167.665% no-repeat;
+    background-size: 300%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    &:hover {
+      cursor: pointer;
+      background-size: 310%;
+      opacity: 0.9;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-size: 100%;
+
+      &:hover {
+        background-size: 110%;
+      }
+    }
+
+    .title {
+      color: #fff;
+      text-align: center;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      padding: 0 2.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      H1 {
+        font-size: 3.6rem;
+        margin-bottom: 2.8rem;
+      }
+
+      p {
+        font-size: 2.4rem;
+        margin: 0;
+      }
+    }
+  }
+}
+.collection {
+  padding: 0 2rem;
+  margin-top: 9rem;
+  color: #202020;
+  text-align: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  justify-content: center;
+
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .nomargin {
+    margin: 0;
+  }
 }

@@ -19,7 +19,7 @@ const NavbarMain = () => {
           <div className="navbar__button" onClick={handleToggle}></div>
         </div>
       </div>
-      {!navbarOpen && (
+      {navbarOpen && (
         <div className="popup">
           <div className="close" onClick={handleToggle}>
             <img src="Close.svg" alt="close" />
