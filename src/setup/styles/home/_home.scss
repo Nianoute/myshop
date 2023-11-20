@@ -59,27 +59,172 @@
       }
     }
   }
-}
-.collection {
-  padding: 0 2rem;
-  margin-top: 9rem;
-  color: #202020;
-  text-align: center;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .collection {
+    padding: 0 2rem;
+    margin-top: 9rem;
+    color: #202020;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  h2 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .nomargin {
+      margin: 0;
+    }
   }
 
-  .nomargin {
-    margin: 0;
+  .catalogue {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .catalogue_item {
+      width: 30rem;
+      height: 35rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      .info {
+        width: 30rem;
+        height: 35rem;
+        border-radius: 20px;
+        background: linear-gradient(
+          180deg,
+          rgba(196, 196, 196, 0) 0%,
+          rgba(32, 32, 32, 0.6) 100%
+        );
+        position: relative;
+
+        .name {
+          color: #fff;
+          text-align: center;
+          font-family: Gilroy;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          position: absolute;
+          bottom: 4.2rem;
+          left: 3.5rem;
+        }
+      }
+    }
+
+    #sweats {
+      background-image: url(../../../../public/home/Sweats.png);
+      background-size: 120%;
+      background-position-x: center;
+    }
+
+    #t-shirts {
+      background-image: url(../../../../public/home/T-shirts.png);
+      background-size: 120%;
+      background-position-x: center;
+    }
+  }
+
+  .selections {
+    margin-top: 6rem;
+    margin-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+
+    h3 {
+      color: #202020;
+      font-family: Gilroy;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      margin: 3rem 0;
+    }
+
+    .listes {
+      overflow-x: scroll;
+      display: -webkit-box;
+      &::-webkit-scrollbar {
+        width: 12rem;
+        height: 0.1rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #e6eaee;
+      }
+    }
+
+    .item {
+      width: 25rem;
+      height: 35rem;
+      display: flex;
+      flex-direction: column;
+      margin-right: 2rem;
+      .image {
+        width: 100%;
+        height: 25rem;
+        border-radius: 20px;
+        background: rgba(244, 226, 228, 0.35);
+        overflow: hidden;
+        text-align: center;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.6rem;
+        p {
+          margin: 0;
+          color: #202020;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+
+        .categorie {
+          font-size: 1.4rem;
+        }
+
+        .name,
+        .price {
+          font-size: 1.6rem;
+        }
+
+        .colors {
+          display: flex;
+          flex-direction: row;
+          margin-top: 1rem;
+          .color {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+          }
+
+          .grey {
+            background: #bbb;
+          }
+          .blue {
+            background: #00bfc8;
+          }
+          .red {
+            background: #eb5757;
+          }
+          .green {
+            background: #9fd839;
+          }
+        }
+      }
+    }
   }
 }

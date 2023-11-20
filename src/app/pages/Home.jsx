@@ -23,6 +23,55 @@ const HomePage = () => {
         </p>
         <div className="primary_button nomargin">Découvrir</div>
       </div>
+      <div className="catalogue">
+        <div className="catalogue_item" id="sweats">
+          <div className="info">
+            <div className="name">Nos Sweats</div>
+          </div>
+        </div>
+        <div className="catalogue_item" id="t-shirts">
+          <div className="info">
+            <div className="name">Nos T-Shirts</div>
+          </div>
+        </div>
+      </div>
+      <div className="selections">
+        <h3>NOTRE SÉLECTION</h3>
+        <div className="listes">
+          <div className="item">
+            <div className="image">
+              <img src="/home/select/bonnet.png" alt="bonnet" />
+            </div>
+            <div className="info">
+              <p className="categorie">Permanent</p>
+              <p className="name">Bonnet Étudiant Cultur Campus</p>
+              <p className="price">10€</p>
+              <div className="colors">
+                <div className="color grey" />
+                <div className="color blue" />
+                <div className="color red" />
+                <div className="color green" />
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="image">
+              <img src="/home/select/bonnet.png" alt="bonnet" />
+            </div>
+            <div className="info">
+              <p className="categorie">Permanent</p>
+              <p className="name">Bonnet Étudiant Cultur Campus</p>
+              <p className="price">10€</p>
+              <div className="colors">
+                <div className="color grey" />
+                <div className="color blue" />
+                <div className="color red" />
+                <div className="color green" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
