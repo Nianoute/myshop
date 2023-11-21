@@ -1,0 +1,287 @@
+.item {
+  .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    position: relative;
+    .back_button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 2rem;
+      margin-left: 2rem;
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      text-decoration: none;
+      color: #646464;
+      font-family: Gilroy;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .image {
+      margin-top: 2rem;
+      width: 35rem;
+      height: 35rem;
+      border-radius: 20px;
+      background: linear-gradient(#fff8f9, #f4e2e4);
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      width: 100%;
+      color: #000;
+      font-family: Gilroy;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      .group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .codeProduit {
+          font-weight: 400;
+          font-family: Lato;
+        }
+      }
+      .taille {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        .listes {
+          display: flex;
+          flex-direction: row;
+          margin-top: 1rem;
+          .taille_item {
+            margin-right: 1rem;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.5rem;
+            background: #f4e2e4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &.active {
+              background: #fff8f9;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            }
+          }
+        }
+      }
+      .colors {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        .listes {
+          display: flex;
+          flex-direction: row;
+          margin-top: 1rem;
+          .color_item {
+            margin-right: 1rem;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &.active {
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+              border: 1px solid #fff8f9;
+            }
+          }
+          .black {
+            background: #000;
+          }
+          .white {
+            background: #f2f2f2;
+          }
+          .pink {
+            background: #f4e2e4;
+          }
+        }
+      }
+      .quantity {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        .quantity_input input {
+          margin-top: 1rem;
+          width: 10rem;
+          height: 5rem;
+          border-radius: 0.5rem;
+          border: 1px solid #f4e2e4;
+          text-align: center;
+          font-family: lato;
+          font-weight: 400;
+          background: #fff8f9;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .panier {
+        margin-top: 2rem;
+        width: 100%;
+        height: 5rem;
+        border-radius: 0.5rem;
+        background: #ed5466;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+        font-family: Gilroy;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .accordeon {
+        margin-top: 6.5rem;
+
+        .accordeon_title {
+          border-top: 1px solid #f4e2e4;
+          padding: 2rem 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            margin: 0;
+          }
+
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-right: 1rem;
+          }
+
+          .active {
+            transform: rotate(180deg);
+          }
+        }
+
+        .accordeon_children {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .selections {
+    margin-top: 6rem;
+    margin-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+
+    h3 {
+      color: #202020;
+      font-family: Gilroy;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      margin: 3rem 0;
+    }
+
+    .listes {
+      overflow-x: scroll;
+      display: -webkit-box;
+      &::-webkit-scrollbar {
+        width: 12rem;
+        height: 0.1rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #e6eaee;
+      }
+    }
+
+    .item {
+      width: 25rem;
+      height: 35rem;
+      display: flex;
+      flex-direction: column;
+      margin-right: 2rem;
+      text-decoration: none;
+      .image {
+        width: 100%;
+        height: 25rem;
+        border-radius: 20px;
+        background: rgba(244, 226, 228, 0.35);
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.6rem;
+        p {
+          margin: 0;
+          color: #202020;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+
+        .categorie {
+          font-size: 1.4rem;
+        }
+
+        .name,
+        .price {
+          font-size: 1.6rem;
+        }
+
+        .colors {
+          display: flex;
+          flex-direction: row;
+          margin-top: 1rem;
+          .color {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+          }
+
+          .grey {
+            background: #bbb;
+          }
+          .blue {
+            background: #00bfc8;
+          }
+          .red {
+            background: #eb5757;
+          }
+          .green {
+            background: #9fd839;
+          }
+        }
+      }
+    }
+  }
+}
