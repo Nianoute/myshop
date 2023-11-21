@@ -45,5 +45,10 @@
     font-family: Calibri;
     font-size: 1.4rem;
     padding-left: 2rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

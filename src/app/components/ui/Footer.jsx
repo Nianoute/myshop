@@ -7,7 +7,7 @@ const Footer = () => {
         <p>Faq</p>
         <p>Nos points de ventes</p>
         <p>Nous contacter</p>
-        <p>TCGU et Mentions Légales</p>
+        <p>CGU et Mentions Légales</p>
       </div>
       <div className="newsletter">
         <h2>NEWSLETTER</h2>
@@ -18,7 +18,7 @@ const Footer = () => {
         <p>Instagram</p>
       </div>
       <div className="logo">
-        <img src="Logo.svg" alt="logo" />
+        <img src="/Logo.svg" alt="logo" />
       </div>
     </div>
   );
