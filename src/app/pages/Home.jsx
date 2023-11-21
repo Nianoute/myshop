@@ -1,6 +1,16 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import { selectionsService } from "../../setup/services/selections.service";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  const [selections, setSelections] = useState([]);
+
+  useEffect(() => {
+    selectionsService.getAll().then((response) => {
+      setSelections(response);
+    });
+  }, [selections]);
+
   return (
     <div className="home">
       <div className="space" />
@@ -38,38 +48,28 @@ const HomePage = () => {
       <div className="selections">
         <h3>NOTRE SÉLECTION</h3>
         <div className="listes">
-          <div className="item">
-            <div className="image">
-              <img src="/home/select/bonnet.png" alt="bonnet" />
-            </div>
-            <div className="info">
-              <p className="categorie">Permanent</p>
-              <p className="name">Bonnet Étudiant Cultur Campus</p>
-              <p className="price">10€</p>
-              <div className="colors">
-                <div className="color grey" />
-                <div className="color blue" />
-                <div className="color red" />
-                <div className="color green" />
+          {selections.map((selection) => (
+            <Link
+              to={`/items/${selection.id}`}
+              key={selection.id}
+              className="item"
+            >
+              <div className="image">
+                <img src={selection.image} alt={selection.name} />
               </div>
-            </div>
-          </div>
-          <div className="item">
-            <div className="image">
-              <img src="/home/select/bonnet.png" alt="bonnet" />
-            </div>
-            <div className="info">
-              <p className="categorie">Permanent</p>
-              <p className="name">Bonnet Étudiant Cultur Campus</p>
-              <p className="price">10€</p>
-              <div className="colors">
-                <div className="color grey" />
-                <div className="color blue" />
-                <div className="color red" />
-                <div className="color green" />
+              <div className="info">
+                <p className="categorie">{selection.category}</p>
+                <p className="name">{selection.name}</p>
+                <p className="price">{selection.price}€</p>
+                <div className="colors">
+                  <div className="color grey" />
+                  <div className="color blue" />
+                  <div className="color red" />
+                  <div className="color green" />
+                </div>
               </div>
-            </div>
-          </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
