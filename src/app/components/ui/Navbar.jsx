@@ -29,7 +29,11 @@ const NavbarMain = () => {
           </div>
           <div className="nav">
             <div>
-              <p>Collection</p>
+              <p>
+                <Link to={"/collections"} onClick={handleToggle}>
+                  Collection
+                </Link>
+              </p>
               <p>Nouveautés</p>
               <p>Sweats</p>
               <p>T-Shirts</p>
